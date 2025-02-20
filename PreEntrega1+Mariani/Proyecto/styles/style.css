@@ -255,7 +255,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 /* Contenido del footer */

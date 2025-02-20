@@ -1,0 +1,515 @@
+/* Google Fonts - Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Raleway", serif;
+    margin: 90px;
+    padding: 80px !important; /* Ajusta según la nueva altura de la navbar */
+}
+
+/* Header */
+h1 {
+    font-size: 90px;
+    color: #B17AF6;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.h2-centrado {
+    margin: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+    color: #231F1F;
+}
+
+/* Sin fondo en la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 0; /* Aumenta el padding vertical */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+    background-color: #ffffff; /* Color de fondo sólido al hacer scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra para mayor visibilidad */
+}
+
+/* Estilos para el icono del menú hamburguesa */
+.burger-icon {
+    width: 30px; /* Ajusta el tamaño según prefieras */
+    height: auto;
+    fill: #231F1F; /* Cambia el color si es necesario */
+}
+
+/* Personalización adicional del menú hamburguesa (si es necesario) */
+.navbar-toggler {
+    border: none; /* Elimina el borde del botón */
+    background: none; /* Elimina el fondo */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #231F1F; /* Ajusta el color de los enlaces */
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #B17AF6; /* Cambia el color al pasar el ratón */
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Controla el espaciado entre los elementos */
+}
+
+.hero h1 {
+    text-align: left;
+    margin: 0; /* Elimina el margen por defecto */
+    padding-bottom: 5px; /* Agrega un poco de espacio debajo */
+}
+
+.p-hero {
+    font-size: 20px;
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.boton-hero {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #B17AF6;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start; /* Alinea el botón a la izquierda */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Agrega una transición suave */
+}
+
+.boton-hero:hover {
+    background-color: #9A63D3; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Agranda ligeramente el botón */
+}
+
+.hero-image {
+    max-width: 35%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.herramientas {
+    width: 80%;
+    max-width: 1200px; 
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 90px;
+}
+
+.herramienta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Asegúrate de que el contenedor tenga una altura suficiente */
+}
+
+/* Sección "Sobre Sofia" */
+.sobre-sofia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; /* 🔄 Invierte el orden: Imagen a la izquierda */
+}
+
+.sobre-sofia-text {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right; /* 📌 Alinea el texto y título a la derecha */
+}
+
+.Sofia {
+    text-align: right; /* 📌 Asegura que el título también se alinee a la derecha */
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+.sobre-sofia p {
+    margin: 0;
+    font-size: 20px;
+    text-align: right; /* 📌 Asegura que el párrafo también esté alineado a la derecha */
+}
+
+.sobre-sofia img {
+    max-width: 35%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .sobre-sofia {
+        flex-direction: column;
+        align-items: flex-end; /* 📌 Alinea el texto a la derecha en mobile */
+    }
+
+    .sobre-sofia-text {
+        max-width: 100%;
+    }
+
+    .sobre-sofia img {
+        max-width: 80%;
+        align-self: center;
+    }
+}
+
+/* Banner Final */
+.banner-final {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustes generales para la estructura de la página */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que la página cubra toda la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+/* Footer */
+footer {
+    background-color: #454545;
+    color: white;
+    padding: 40px 20px; /* Se aumentó el padding para más espacio */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* Contenido del footer */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px; /* Limita el ancho para mejor legibilidad */
+}
+
+.pgrande-footer {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.p-footer {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* Ajuste del logo en el footer */
+.footer-logo {
+    width: 394px;
+    height: 158px;
+    object-fit: contain;
+    margin-left: auto;
+    align-self: center;
+}
+
+/* Ajustes adicionales */
+.img-herramienta {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.img-sinmargen {
+    margin: 0;
+    padding: 0;
+}
+
+.icono-redes {
+    font-size: 63px;
+}
+
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+}
+
+/* Servicios Sección */
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 32px;
+    max-width: 1100px; /* Limita el ancho para mejor distribución */
+    margin: 0 auto; /* Centra la sección */
+    margin-bottom: 90px;
+}
+
+.servicio {
+    padding: 16px;
+    background-color: #FFFAFF;
+    border-radius: 5px;
+}
+
+.imagen-servicio {
+    margin-bottom: 20px; /* ✅ Agrega espacio debajo de la imagen */
+}
+
+.titulo-servicio {
+    margin-bottom: 10px; /* ✅ Agrega espacio debajo de la imagen */
+}
+
+.tercera-seccion {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex; /* o display: block; */
+    justify-content: center; /* Si quieres centrar */
+}
+
+/* Para tablets (2 columnas) */
+@media (max-width: 1024px) {
+    .servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para móviles (1 columna) */
+@media (max-width: 768px) {
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+}
+
+.segunda-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+}
+
+.segunda-seccion-texto {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.titulo-servicios {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 5px; /* Espacio debajo del título */
+    font-size: 30px;
+}
+
+.descripcion-servicios {
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+.imagen-servicios {
+    max-width: 35%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .segunda-seccion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .segunda-seccion-texto {
+        max-width: 100%;
+    }
+
+    .imagen-servicios {
+        max-width: 80%;
+        align-self: center;
+    }
+}
+
+/* Proyectos Sección */
+.img-proyectos {
+    margin-bottom: 20px;
+}
+
+.titulo-proyectos {
+    margin-bottom: 30px;
+}
+
+.primera-seccion {
+    margin-bottom: 80px;
+}
+
+
+
+
+/* Contacto Sección */
+.contacto-seccion {
+    margin-bottom: 50px;
+}
+
+.titulo-contacto {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.img-contacto {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes en el formulario */
+.contacto-div-2 form {
+    max-width: 100%;
+}
+
+/* Espaciado entre inputs */
+.form-label {
+    font-weight: bold;
+}
+
+.form-control, .form-select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Espaciado entre filas */
+.mb-3 {
+    margin-bottom: 15px !important;
+}
+
+/* Ajuste del botón */
+.btn-primary {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/* Blog Sección */
+.img-centrada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.noticia-p {
+    margin-bottom: 20px;
+}
+
+.blog-seccion {
+    margin-bottom: 60px;
+}
+
+
+
+
+

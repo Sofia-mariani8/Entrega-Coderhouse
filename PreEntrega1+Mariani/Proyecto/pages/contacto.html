@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Sofia Mariani</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#">
+                <img class="logo-header" src="../assets/img/logo-header.png" alt="Logo">
+            </a>
+
+            <ul>
+                <li>
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Título -->
+        <h2 class="h2-centrado">Contáctame</h2>
+
+<!-- Sección de contacto combinada -->
+<section class="contacto-seccion container">
+    <div class="row d-flex align-items-center justify-content-center"> <!-- Fila alineada verticalmente -->
+
+        <!-- Columna de texto e imagen (12 col en móvil, 4 en desktop) -->
+        <div class="col-12 col-md-4 text-md-start text-center"> 
+            <div class="contacto-div-1">
+                <h3 class="titulo-contacto">Lorem ipsum dolor sit</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet feugiat consequat litora, hendrerit.</p>
+                <img class="img-contacto img-fluid" src="../assets/img/img-contacto.png" alt="">
+            </div>
+        </div>
+
+        <!-- Columna del formulario (12 col en móvil, 8 en desktop) -->
+        <div class="col-12 col-md-8">
+            <div class="contacto-div-2">
+                <form action="/submit" method="post" class="p-4 shadow rounded bg-light">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Tu Nombre:</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa tu email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Ingresa tu teléfono">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="pais" class="form-label">País:</label>
+                            <select name="pais" id="pais" class="form-select">
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Paraguay">Paraguay</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+</body>
+
+<footer>
+    <div class="footer-left">
+        <p class="pgrande-footer">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+        <div class="redes-sociales">
+            <img src="../assets/img/instagram.svg" class="icono-redes" alt="Instagram">
+            <img src="../assets/img/facebook.svg" class="icono-redes" alt="Facebook">
+            <img src="../assets/img/linkedin.svg" class="icono-redes" alt="LinkedIn">
+        </div>
+        <p class="p-footer">Copyright© 2025 Sofia Mariani. Reservados todos los derechos</p>
+    </div>
+    <img src="../assets/img/logo-footer.png" class="footer-logo" alt="Logo Footer">
+</footer>
+</body>
+</html>

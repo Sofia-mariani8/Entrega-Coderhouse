@@ -31,7 +31,6 @@
      text-align: center;
      margin-bottom: 60px;
      margin-top: 150px;
-
  }
  
  h3 {
@@ -58,7 +57,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     box-sizing: border-box;
-    margin-top: auto; /* Esto empuja el footer hacia abajo */
+    margin-top: auto; 
 }
  
  
@@ -199,8 +198,8 @@
     margin-bottom: 90px;
     flex-wrap: wrap;
     padding-top: 70px; 
-    padding: 40px 5%; /* Evita afectaciones generales */
-    margin-top: 100px;
+    padding: 40px 5%; 
+    margin-top: 130px;
 }
 
 .hero-text {
@@ -256,6 +255,7 @@
     align-items: center; 
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 120px;
 }
 
 .herramienta {
@@ -267,6 +267,10 @@
     height: 100%; 
 }
 
+.h2-centrado-herramientas {
+    text-align: center;
+}
+
 .sobre-sofia {
     display: flex;
     justify-content: space-between;
@@ -275,7 +279,7 @@
     margin-bottom: 90px;
     flex-wrap: wrap;
     flex-direction: row-reverse; 
-    padding: 40px 5%; /* Evita afectar otras secciones */
+    padding: 40px 5%; 
 }
 
 .sobre-sofia-text {
@@ -304,12 +308,31 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0 5%;
+        margin-top: 140px;
     }
 
     .hero-text,
     .sobre-sofia-text {
         max-width: 100%;
         width: 100%;
+        font-size: 20px !important;
+    }
+
+    .sofia-parrafo {
+        font-size: 20px !important;
+    }
+
+    .hero-title {
+        font-size: 50px; 
+    }
+
+    .sofia-title {
+        font-size: 50px !important;
+    }
+    
+    .h2-centrado-herramientas {
+        font-size: 50px !important;
+        text-align: center;
     }
 
     .hero-image,
@@ -317,7 +340,14 @@
         max-width: 100%;
         width: 100%;
     }
+
+    .banner-final {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
+
 
 /* Sección Servicios */
 .servicios {
@@ -326,7 +356,13 @@
     gap: 32px;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 5%; /* Evita afectar otras secciones */
+    padding: 40px 5%; 
+}
+
+.h2-centradoSERVICIOS {
+    margin-top: 140px;
+    text-align: center;
+    font-size: 60px;
 }
 
 .servicio {
@@ -366,7 +402,28 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .segunda-seccion-texto {
+        max-width: 100%; 
+        width: 100%; 
+        font-size: 20px !important;         
+    }
+
+    .descripcion-servicios {
+        font-size: 20px !important;       
+    }
+
+    .titulo-servicios {
+        font-size: 50px !important;       
+    }
+
     .imagen-servicios {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .banner-final {
         max-width: 100%;
         width: 100%;
         object-fit: cover;
@@ -379,15 +436,14 @@
 /* Sección de Proyectos */
 .primera-seccion {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
-    gap: 32px; /* Espacio entre proyectos */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 32px; 
     max-width: 1100px;
     margin: 0 auto;
     margin-bottom: 90px;
-    padding: 0 15px; /* Ajustar padding a 15px para no afectar la grilla */
+    padding: 0 15px; 
 }
 
-/* Estilo para cada proyecto */
 .proyecto {
     padding: 16px;
     background-color: #FFFAFF;
@@ -398,37 +454,33 @@
     text-align: center;
 }
 
-/* Estilo de las imágenes */
 .img-proyectos {
-    max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
-    height: auto; /* Mantiene la proporción */
-    object-fit: cover; /* Mantiene la imagen recortada si es necesario */
-    margin-bottom: 16px; /* Espacio entre la imagen y el título */
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    margin-bottom: 16px; 
 }
 
-/* Título de los proyectos */
 .titulo-proyecto {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
-    color: #333; /* Ajusta el color según tu diseño */
+    color: #333; 
 }
 
-/* Media query para pantallas más pequeñas */
+/* Media query Proyecto */
 @media (max-width: 1024px) {
     .primera-seccion {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 768px) {
     .primera-seccion {
-        grid-template-columns: 1fr; /* 1 columna en móviles */
-        gap: 20px; /* Reducir el espacio entre los proyectos */
+        grid-template-columns: 1fr; 
+        gap: 20px; 
     }
 }
-
-
 
 
 
@@ -467,13 +519,13 @@
 }
 
 .btn-primary {
-    background-color: #B17AF6 !important; /* Color violeta */
-    border-color: #B17AF6 !important; /* Borde del mismo color */
-    color: white !important; /* Texto en blanco */
+    background-color: #B17AF6 !important; 
+    border-color: #B17AF6 !important; 
+    color: white !important; 
 }
 
 .btn-primary:hover {
-    background-color: #9A60E5 !important; /* Un tono más oscuro en hover */
+    background-color: #9A60E5 !important; 
     border-color: #9A60E5 !important;
 }
 
@@ -517,7 +569,6 @@
     font-weight: bold;
 }
 
-/* Botón de texto en color violeta */
 .boton-blog {
     display: inline-block;
     text-decoration: none;
@@ -529,11 +580,10 @@
     margin-top: 20px;
 }
 
-/* Cambio de color al hacer clic */
 .boton-blog:active {
     color: #8E5ACC;
 }
 
 .boton-blog:visited {
-    color: #572597; /* Aún más oscuro para indicar que ya se visitó */
+    color: #572597; 
 }

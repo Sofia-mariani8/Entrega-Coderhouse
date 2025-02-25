@@ -60,7 +60,6 @@
     margin-top: auto; 
 }
  
- 
  .footer-left {
      display: flex;
      flex-direction: column;
@@ -229,7 +228,8 @@
     border-radius: 20px;
     cursor: pointer;
     align-self: flex-start; 
-    transition: background-color 0.3s ease, transform 0.2s ease; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
 }
 
 .boton-hero:hover {
@@ -255,7 +255,7 @@
     align-items: center; 
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 
 .herramienta {
@@ -265,6 +265,10 @@
     align-items: center;
     text-align: center;
     height: 100%; 
+}
+
+.porcentaje {
+    font-weight: bold;
 }
 
 .h2-centrado-herramientas {
@@ -288,12 +292,17 @@
     flex-direction: column;
     gap: 10px;
     text-align: right; 
+    font-size: 60px;
 }
 
 .sobre-sofia img {
     max-width: 35%;
     width: 100%;
     object-fit: cover;
+}
+
+.sofia-parrafo {
+    font-size: 20px;
 }
 
 .banner-final {
@@ -315,11 +324,15 @@
     .sobre-sofia-text {
         max-width: 100%;
         width: 100%;
-        font-size: 20px !important;
+        font-size: 18px !important;
+    }
+
+    .boton-hero {
+        font-size: 18px !important;
     }
 
     .sofia-parrafo {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     .hero-title {
@@ -327,11 +340,15 @@
     }
 
     .sofia-title {
-        font-size: 50px !important;
+        font-size: 40px !important;
     }
     
+    .sobre-sofia {
+        margin-top: -60px;
+    }
+
     .h2-centrado-herramientas {
-        font-size: 50px !important;
+        font-size: 40px !important;
         text-align: center;
     }
 
@@ -342,11 +359,34 @@
     }
 
     .banner-final {
-        max-width: 100%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .banner-final img {
+        width: clamp(300px, 100%, 1200px); 
+        height: auto; 
         object-fit: cover;
+    }    
+
+    .footer-logo {
+    width: 394px;
+    height: 158px;
+    object-fit: contain;
+    display: block; 
+    margin: 0 auto; 
+    }
+
+    .home .footer-logo {
+        width: 394px;
+        height: 158px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
     }
 }
+
 
 
 /* Sección Servicios */
@@ -365,10 +405,19 @@
     font-size: 60px;
 }
 
+.titulo-servicio {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 .servicio {
     padding: 16px;
     background-color: #FFFAFF;
     border-radius: 5px;
+}
+
+.descripcion-servicio {
+    font-size: 20px !important;       
 }
 
 .segunda-seccion {
@@ -393,6 +442,11 @@
     object-fit: cover;
 }
 
+.descripcion-servicios {
+    font-size: 20px !important;       
+}
+
+/* Media Queries - Servicios */
 @media (max-width: 768px) {
     .servicios {
         grid-template-columns: 1fr;
@@ -409,12 +463,16 @@
         font-size: 20px !important;         
     }
 
+    .h2-centradoSERVICIOS {
+        font-size: 50px !important;         
+    }
+
     .descripcion-servicios {
-        font-size: 20px !important;       
+        font-size: 18px !important;       
     }
 
     .titulo-servicios {
-        font-size: 50px !important;       
+        font-size: 40px !important;       
     }
 
     .imagen-servicios {
@@ -427,6 +485,14 @@
         max-width: 100%;
         width: 100%;
         object-fit: cover;
+    }
+
+    .servicios .footer-logo {
+        width: 394px;
+        height: 158px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -468,7 +534,7 @@
     color: #333; 
 }
 
-/* Media query Proyecto */
+/* Media Queries Proyecto */
 @media (max-width: 1024px) {
     .primera-seccion {
         grid-template-columns: repeat(2, 1fr); 
@@ -493,6 +559,11 @@
 .titulo-contacto {
     margin-bottom: 30px;
     font-size: 40px;
+    font-weight: bold;
+}
+
+.parrafo-contacto {
+    font-size: 20px;
 }
 
 .img-contacto {
@@ -552,6 +623,7 @@
 
 .noticia-p {
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .blog-seccion {
@@ -573,7 +645,7 @@
     display: inline-block;
     text-decoration: none;
     color: #B17AF6;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;

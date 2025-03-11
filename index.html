@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
     <title>Sofia Mariani</title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img class="logo-header" src="assets/img/logo-header.png" alt="Logo" style="width: 120px;">
+                    <img src="assets/img/logo-header.png" alt="Logo" class="logo-header">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="assets/img/burger-menu-svgrepo-com.svg" alt="Menu" class="burger-icon">
+                    <img src="assets/img/burger-menu-svgrepo-com.svg" alt="Menú" class="burger-icon">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -36,66 +31,87 @@
                     </ul>
                 </div>
             </div>
-        </nav>           
+        </nav>
     </header>
-
+    
     <main>
+        <!-- Sección 1 -->
         <section class="hero">
             <div class="hero-text">
                 <h1 class="hero-title">UX UI Designer</h1>
                 <p class="p-hero">Diseñadora en crear experiencias digitales intuitivas, ofreciendo productos fáciles de usar para los usuarios.</p>
-                <a href="pages/servicios.html">
-                    <button class="boton-hero">Ver Portfolio</button>
-                </a>
+                <a href="pages/servicios.html" class="boton-hero">Ver Portfolio</a>
             </div>
-            <img class="hero-image" src="assets/img/img-bienvenida.png" alt="Bienvenida">
+            <img src="assets/img/img-bienvenida.png" alt="Bienvenida" class="hero-image">
         </section>
+
+        <!-- Sección 2 -->
+        <section class="seccion-herramientas">
+            <h2 class="h2-centrado-herramientas">Mis herramientas favoritas</h2>
+            
+            <div class="herramientas">
+              <div class="herramienta">
+                <img src="assets/img/herramienta1.png" alt="Herramienta 1" class="img-herramienta">
+                <h3 class="porcentaje">98%</h3>
+              </div>
+              <div class="herramienta">
+                <img src="assets/img/herramienta2.png" alt="Herramienta 2" class="img-herramienta">
+                <h3 class="porcentaje">92%</h3>
+              </div>
+              <div class="herramienta">
+                <img src="assets/img/herramienta3.png" alt="Herramienta 3" class="img-herramienta">
+                <h3 class="porcentaje">90%</h3>
+              </div>
+              <div class="herramienta">
+                <img src="assets/img/herramienta4.png" alt="Herramienta 4" class="img-herramienta">
+                <h3 class="porcentaje">85%</h3>
+              </div>
+              <div class="herramienta">
+                <img src="assets/img/herramienta5.png" alt="Herramienta 5" class="img-herramienta">
+                <h3 class="porcentaje">90%</h3>
+              </div>
+              <div class="herramienta">
+                <img src="assets/img/herramienta6.png" alt="Herramienta 6" class="img-herramienta">
+                <h3 class="porcentaje">98%</h3>
+              </div>
+            </div>
+          </section>          
         
-        <h2 class="h2-centrado-herramientas">Mis herramientas favoritas</h2>
-
-        <section class="herramientas">
-            <div class="herramienta"><img src="assets/img/herramienta1.png" alt="Herramienta 1" class="img-herramienta"><h3 class="porcentaje">98%</h3></div>
-            <div class="herramienta"><img src="assets/img/herramienta2.png" alt="Herramienta 2" class="img-herramienta"><h3 class="porcentaje">92%</h3></div>
-            <div class="herramienta"><img src="assets/img/herramienta3.png" alt="Herramienta 3" class="img-herramienta"><h3 class="porcentaje">90%</h3></div>
-            <div class="herramienta"><img src="assets/img/herramienta4.png" alt="Herramienta 4" class="img-herramienta"><h3 class="porcentaje">85%</h3></div>
-            <div class="herramienta"><img src="assets/img/herramienta5.png" alt="Herramienta 5" class="img-herramienta"><h3 class="porcentaje">90%</h3></div>
-            <div class="herramienta"><img src="assets/img/herramienta6.png" alt="Herramienta 6" class="img-herramienta"><h3 class="porcentaje">98%</h3></div>
-        </section>
-
+        <!-- Sección 3 -->
         <section class="sobre-sofia">
             <div class="sobre-sofia-text">
                 <h2 class="sofia-title">¿Quién es Sofia?</h2>
                 <p class="sofia-parrafo">Sofía es una profesional apasionada por el diseño, enfocada en crear soluciones visuales innovadoras que mejoren la experiencia del usuario en cada proyecto.</p>
             </div>
-            <img class="sofia-img" src="assets/img/sofia-img.png" alt="Sofia">
+            <img src="assets/img/sofia-img.png" alt="Sofia" class="sofia-img">
         </section>
-
+        
+        <!-- Sección 4 -->
         <section class="banner-final">
-            <img src="assets/img/bannerfinal-home.png" class="img-sinmargen" alt="banner-final">
+            <img src="assets/img/bannerfinal-home.png" alt="banner-final" class="img-sinmargen">
         </section>
     </main>
-
-<footer> 
-    <div class="footer-left">
-        <p class="pgrande-footer">¡Comencemos a impulsar tu negocio juntos desde hoy mismo!</p>
-        <div class="redes-sociales">
-            <a href="https://www.instagram.com/aikoi_art/" target="_blank">
-                <img src="assets/img/instagram.svg" class="icono-redes" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61573253412123" target="_blank">
-                <img src="assets/img/facebook.svg" class="icono-redes" alt="Facebook">
-            </a>
-            <a href="https://www.linkedin.com/in/sofia-mariani-8b721619a/" target="_blank">
-                <img src="assets/img/linkedin.svg" class="icono-redes" alt="LinkedIn">
-            </a>
+    
+    <footer>
+        <div class="footer-left">
+            <p class="pgrande-footer">¡Comencemos a impulsar tu negocio juntos desde hoy mismo!</p>
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/aikoi_art/" target="_blank">
+                    <img src="assets/img/instagram.svg" alt="Instagram" class="icono-redes">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61573253412123" target="_blank">
+                    <img src="assets/img/facebook.svg" alt="Facebook" class="icono-redes">
+                </a>
+                <a href="https://www.linkedin.com/in/sofia-mariani-8b721619a/" target="_blank">
+                    <img src="assets/img/linkedin.svg" alt="LinkedIn" class="icono-redes">
+                </a>
+            </div>
+            <p class="p-footer">Copyright &copy; 2025 Sofia Mariani. Reservados todos los derechos</p>
         </div>
-        <p class="p-footer">Copyright© 2025 Sofia Mariani. Reservados todos los derechos</p>
-    </div>
-    <img src="assets/img/logo-footer.png" class="footer-logo" alt="Logo Footer">
-</footer>
+        <img src="assets/img/logo-footer.png" alt="Logo Footer" class="footer-logo">
+    </footer>
 
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>

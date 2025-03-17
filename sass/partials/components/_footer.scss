@@ -1,0 +1,82 @@
+/* Footer */
+footer {
+    width: 100%;
+    background-color: map-get($colors, footer-bg);
+    color: map-get($colors, text-light);
+    padding: $footer-padding;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: auto;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: $footer-max-width;
+  }
+  
+  .pgrande-footer {
+    font-size: map-get($font-sizes, p);
+    margin-bottom: 10px;
+    color: map-get($colors, text-light);
+  }
+  
+  .redes-sociales {
+    display: flex;
+    gap: $gap-redes;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .p-footer {
+    font-size: 15px;
+    color: map-get($colors, text-light);
+  }
+  
+  .footer-logo {
+    width: $footer-logo-width;
+    height: $footer-logo-height;
+    object-fit: contain;
+    margin-left: auto;
+    align-self: center;
+  }
+  
+  .img-herramienta {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .img-sinmargen {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .icono-redes {
+    font-size: $icono-redes-size;
+  }
+  
+  .section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: map-get($colors, section-bg);
+  }
+  
+  .container {
+    width: $container-width;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+  .content-section {
+    float: left;
+    width: 55%;
+  }
+  
+  .image-section {
+    float: right;
+    width: 40%;
+  }

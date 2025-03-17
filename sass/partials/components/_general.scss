@@ -1,0 +1,23 @@
+h1 {
+    @include heading(h1, 900, map-get($colors, primary));
+  }
+  
+  h2 {
+    @include heading(h2);
+  }
+  
+  .h2-centrado {
+    @include centered();
+  }
+  
+  h3 {
+    @include heading(h3);
+  }
+  
+  h4 {
+    @include heading(h4);
+  }
+  
+  p {
+    @include paragraph();
+  }

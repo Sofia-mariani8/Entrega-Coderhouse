@@ -1,0 +1,21 @@
+/* Títulos */
+@mixin heading($level, $weight: 700, $color: inherit, $margin-bottom: 20px) {
+    font-size: map-get($font-sizes, $level);
+    font-weight: $weight;
+    color: $color;
+    margin-bottom: $margin-bottom;
+  }
+
+  /* Párrafos */
+@mixin paragraph($color: map-get($colors, text-dark)) {
+    font-size: map-get($font-sizes, p);
+    color: $color;
+  }
+  
+  /* Centrar elementos */
+  @mixin centered($margin: 30px, $margin-top: 150px, $margin-bottom: 60px) {
+    text-align: center;
+    margin: $margin;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+  }

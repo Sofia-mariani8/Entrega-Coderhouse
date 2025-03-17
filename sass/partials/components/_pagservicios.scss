@@ -1,0 +1,111 @@
+.seccion-servicios {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 5%;
+  }
+  
+  .h2-centradoSERVICIOS {
+    margin-top: 140px;
+    margin-bottom: 32px; /* separa el título del grid */
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  
+  .servicio {
+    padding: 16px;
+    background-color: #FFFAFF;
+    border-radius: 5px;
+  }
+  
+  .titulo-servicio {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .descripcion-servicio {
+    font-size: 20px;
+  }
+  
+  .segunda-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 5%;
+  }
+  
+  .segunda-seccion-texto {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .imagen-servicios {
+    max-width: 35%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .descripcion-servicios {
+    font-size: 20px;
+  }
+  
+  /* Media Queries - Servicios */
+  @media (max-width: 768px) {
+    .servicios {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .segunda-seccion {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .segunda-seccion-texto {
+      max-width: 100%;
+      width: 100%;
+      font-size: 20px;
+    }
+  
+    .h2-centradoSERVICIOS {
+      font-size: 50px;
+    }
+  
+    .descripcion-servicios {
+      font-size: 18px;
+    }
+  
+    .titulo-servicios {
+      font-size: 40px;
+    }
+  
+    .imagen-servicios {
+      max-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .banner-final {
+      max-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .servicios .footer-logo {
+      width: 394px;
+      height: 158px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  

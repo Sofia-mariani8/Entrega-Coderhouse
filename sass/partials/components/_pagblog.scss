@@ -1,0 +1,47 @@
+/* Blog Sección */
+.img-centrada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.noticia-p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.blog-seccion {
+    margin-bottom: 60px;
+    margin: 90px;
+    padding: 80px;
+    margin-top: -80px;
+}
+
+.noticia-1, .noticia-2, .noticia-3 {
+    margin-bottom: 100px;
+}
+
+.titulo-blog {
+    font-weight: bold;
+}
+
+.boton-blog {
+    display: inline-block;
+    text-decoration: none;
+    color: #B17AF6;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+}
+
+.boton-blog:active {
+    color: #8E5ACC;
+}
+
+.boton-blog:visited {
+    color: #572597; 
+}

@@ -1,0 +1,23 @@
+/* BASE */
+@use 'partials/base/_tipografia'; 
+@use 'partials/base/_reset';
+
+/* COMPONENTES */
+@use 'partials/components/_general';
+@use 'partials/components/_botones';
+@use 'partials/components/_cards';
+@use 'partials/components/_navbar';
+@use 'partials/components/_footer';
+
+/* UTILITIES */
+@use 'partials/utilities/_maps';
+@use 'partials/utilities/_mixins';
+@use 'partials/utilities/_variables';
+
+
+/* PÁGINAS */
+@use 'partials/components/_pagblog'; 
+@use 'partials/components/_pagcontacto';
+@use 'partials/components/_paghome';
+@use 'partials/components/_pagproyectos';
+@use 'partials/components/_pagservicios.scss';

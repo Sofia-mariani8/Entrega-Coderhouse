@@ -1,0 +1,23 @@
+.servicio {
+    padding: 16px;
+    background-color: #FFFAFF;
+    border-radius: 5px;
+  }
+  
+  .titulo-servicio {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .descripcion-servicio {
+    font-size: 20px;
+  }
+  
+  /* Media Queries - Servicios */
+  @media (max-width: 768px) {
+    .servicios {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  

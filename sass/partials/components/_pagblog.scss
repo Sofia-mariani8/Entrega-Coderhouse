@@ -11,7 +11,7 @@
 
 .noticia-p {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: map-get($font-sizes, p); 
 }
 
 .blog-seccion {
@@ -27,12 +27,13 @@
 
 .titulo-blog {
     font-weight: bold;
+    font-size: map-get($font-sizes, h2); 
 }
 
 .boton-blog {
     display: inline-block;
     text-decoration: none;
-    color: #B17AF6;
+    color: map-get($colors, primary); 
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
@@ -41,11 +42,11 @@
 }
 
 .boton-blog:active {
-    color: #8E5ACC;
+    color: darken(map-get($colors, primary), 10%); 
 }
 
 .boton-blog:visited {
-    color: #572597; 
+    color: darken(map-get($colors, primary), 20%); 
 }
 
 @media screen and (max-width: 768px) {
@@ -61,21 +62,21 @@
         margin: 40px 20px;
         padding: 40px; 
         text-align: center; 
-        margin-top: -20px
+        margin-top: -20px;
     }
 
     .titulo-blog {
-        font-size: 32px; 
+        font-size: map-get($font-sizes, h3); 
         text-align: center; 
     }
 
     .h2-centrado {
         margin-bottom: -20px;
-        font-size: 50px;
+        font-size: map-get($font-sizes, h1);
     }
 
     .noticia-p {
-        font-size: 18px; 
+        font-size: map-get($font-sizes, p); 
         text-align: center;
     }
 
@@ -94,7 +95,7 @@
     }
 
     .boton-blog {
-        font-size: 18px;
+        font-size: map-get($font-sizes, h4); 
         margin-top: 15px;
         display: block;
         text-align: center;

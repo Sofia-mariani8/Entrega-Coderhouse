@@ -7,3 +7,8 @@
   flex-wrap: $wrap;
   gap: $gap;
 }
+
+/* Estilo de fuente */
+@mixin font-style($style: normal) {
+  font-style: $style;
+}

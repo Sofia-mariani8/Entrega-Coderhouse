@@ -1,12 +1,24 @@
-@mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap, $gap: 0) {
+/* Mixins */
+@mixin flex-center($direction: row, $justify: space-between, $align: center) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-  flex-wrap: $wrap;
+}
+
+@mixin grid-layout($columns, $gap: 0) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
   gap: $gap;
 }
 
+@mixin font-style($size: 16px, $weight: normal, $color: #333) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+/* Sección Servicios */
 .seccion-servicios {
   max-width: 1100px;
   margin: 0 auto;
@@ -21,18 +33,13 @@
 }
 
 .servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  @include grid-layout(3, 32px);
 }
 
 .servicio {
   padding: 16px;
-  background-color: #FFFAFF;
+  background-color: #f0f0f0;
   border-radius: 5px;
-}
-
-.servicio {
   perspective: 1000px;
 }
 
@@ -44,8 +51,8 @@
   backface-visibility: hidden;
   border-radius: 5px;
   padding: 16px;
+  @include flex-center(column, center, center);
   text-align: center;
-  @include flex(column, center, center);
 }
 
 .servicio:hover .servicio-inner {
@@ -53,22 +60,25 @@
 }
 
 .titulo-servicio {
-  font-weight: bold;
-  margin-top: $margin-top-default;
+  @include font-style(20px, bold);
 }
 
 .descripcion-servicio {
-  font-size: 20px;
+  @include font-style(18px);
 }
 
+/* Segunda Sección */
 .segunda-seccion {
-  @include flex(row, space-between, center, wrap, 30px);
+  @include flex-center(row, space-between, center);
+  flex-wrap: wrap;
+  gap: 30px;
   padding: 40px 5%;
 }
 
 .segunda-seccion-texto {
   max-width: 60%;
-  @include flex(column, flex-start, flex-start, nowrap, 10px);
+  @include flex-center(column, flex-start, flex-start);
+  gap: 10px;
 }
 
 .imagen-servicios {
@@ -78,13 +88,13 @@
 }
 
 .descripcion-servicios {
-  font-size: 20px;
+  @include font-style(20px);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .servicios {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    @include grid-layout(1, 20px);
   }
 
   .segunda-seccion {
@@ -106,7 +116,7 @@
     font-size: 18px;
   }
 
-  .titulo-servicios {
+  .titulo-servicio {
     font-size: 40px;
   }
 
@@ -126,7 +136,6 @@
     width: 394px;
     height: 158px;
     object-fit: contain;
-    @include flex(row, center, center);
     display: block;
     margin: 0 auto;
   }

@@ -6,34 +6,3 @@ $font-sizes: (
   h4: 30px,
   p: 25px
 );
-
-/* Colores */
-$colors: (
-  primary: #B17AF6,
-  secondary: #9A63D3,
-  text-dark: #231F1F,
-  text-light: #ffffff,
-  footer-bg: #454545,
-  section-bg: #ddd
-);
-
-/* Espaciados Footer */
-$spacings: (
-  margin-top-default: 20px,
-  padding-footer: 40px 20px,
-  margin-bottom-small: 10px,
-  margin-bottom-large: 20px
-);
-
-/* Tamaño + sombra Navbar */
-$sizes: (
-    navbar-padding: 20px 0,
-    logo-width: 120px,
-    burger-size: 30px,
-    gap-size: 16px
-);
-
-$shadows: (
-    default: 0 2px 10px rgba(0, 0, 0, 0.1),
-    scrolled: 0 4px 6px rgba(0, 0, 0, 0.1)
-);

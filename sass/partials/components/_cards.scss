@@ -1,18 +1,18 @@
 .servicio {
   padding: 16px;
-  background-color: map-get($colors, service-bg);
+  background-color: #f0f0f0; 
   border-radius: 5px;
 }
 
 .titulo-servicio {
   font-weight: bold;
-  margin-top: $margin-top-default;
-  color: map-get($colors, text-dark);
+  margin-top: 20px; 
+  color: #333333; 
 }
 
 .descripcion-servicio {
-  font-size: map-get($font-sizes, service-desc);
-  color: map-get($colors, text-dark);
+  font-size: 18px; 
+  color: #333333; 
 }
 
 /* Media Queries */

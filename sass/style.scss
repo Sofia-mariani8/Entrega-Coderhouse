@@ -1,23 +1,23 @@
 
 /* BASE */
-@use 'partials/base/_tipografia'; 
-@use 'partials/base/_reset';
+@use 'partials/base/tipografia'; 
+@use 'partials/base/reset';
 
 /* UTILITIES */
-@use 'partials/utilities/_maps';
+@use 'partials/utilities/maps';
 @use 'partials/utilities/mixins';
-@use 'partials/utilities/_variables';
+@use 'partials/utilities/variables';
 
 /* COMPONENTES */
 @use "partials/components/general";
-@use 'partials/components/_botones';
-@use 'partials/components/_cards';
-@use 'partials/components/_navbar';
-@use 'partials/components/_footer';
+@use 'partials/components/botones';
+@use 'partials/components/cards';
+@use 'partials/components/navbar';
+@use 'partials/components/footer';
 
 /* PÁGINAS */
-@use 'partials/components/_pagblog'; 
-@use 'partials/components/_pagcontacto';
-@use 'partials/components/_paghome';
-@use 'partials/components/_pagproyectos';
-@use 'partials/components/_pagservicios.scss';
+@use 'partials/components/pagblog'; 
+@use 'partials/components/pagcontacto';
+@use 'partials/components/paghome';
+@use 'partials/components/pagproyectos';
+@use 'partials/components/pagservicios.scss';

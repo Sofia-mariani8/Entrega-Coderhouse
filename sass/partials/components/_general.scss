@@ -1,12 +1,13 @@
+
 h1 {
-  font-size: map-get($font-sizes, h1);
-  color: map-get($colors, primary);
+  font-size: 90px;
+  color: $primary;
   font-weight: 900;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: map-get($font-sizes, h2);
+  font-size: 72px; 
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -19,16 +20,15 @@ h2 {
 }
 
 h3 {
-  font-size: map-get($font-sizes, h3);
+  font-size: 48px; 
   margin-bottom: 20px;
 }
 
 h4 {
-  font-size: map-get($font-sizes, h4);
+  font-size: 36px; 
 }
 
 p {
-  font-size: map-get($font-sizes, p);
-  color: map-get($colors, text-dark);
+  font-size: 18px; 
+  color: #333333; 
 }
-

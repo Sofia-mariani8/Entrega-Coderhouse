@@ -1,17 +1,17 @@
 .boton-hero {
-    font-size: map-get($font-sizes, button);
+    font-size: 90px;
     padding: 10px 20px;
-    background-color: map-get($colors, primary);
-    color: map-get($colors, text-light);
+    background-color: #ff5733; 
+    color: #ffffff; 
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    align-self: flex-start; 
+    align-self: flex-start;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: $margin-top-default;
+    margin-top: 20px;
+}
 
-    &:hover {
-        background-color: map-get($colors, secondary);
-        transform: scale(1.05);
-    }
+.boton-hero:hover {
+    background-color: #ff884d; 
+    transform: scale(1.05);
 }

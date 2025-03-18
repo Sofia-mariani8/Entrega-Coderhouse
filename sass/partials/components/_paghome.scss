@@ -1,13 +1,14 @@
+/* Sección Home */
 .hero {
   @include flex(row, space-between, center, wrap, 30px);
   margin-bottom: 90px;
-  padding: 70px 5%;
+  padding: 40px 5%;
   margin-top: 130px;
 }
 
-.hero-text, .sobre-sofia-text {
+.hero-text {
   max-width: 60%;
-  @include flex(column, flex-start, flex-start, nowrap, 10px);
+  @include flex(column);
 }
 
 .hero h1 {
@@ -16,18 +17,28 @@
   padding-bottom: 5px;
 }
 
-.p-hero, .sofia-parrafo {
-  font-size: 20px;
+.p-hero {
+  @include font-style(20px);
   margin: 0;
 }
 
-.hero-image, .sobre-sofia img {
+.boton-hero {
+  @include font-style(20px);
+  padding: 10px 20px;
+  align-self: flex-start;
+  margin-top: 20px;
+  @include button-style(#B17AF6);
+}
+
+.hero-image {
   max-width: 35%;
   width: 100%;
+  min-width: 300px;
   object-fit: cover;
   flex-grow: 1;
 }
 
+/* Sección Herramientas */
 .herramientas {
   width: 80%;
   max-width: 1200px;
@@ -40,37 +51,113 @@
 .herramienta {
   @include flex(column, center, center);
   text-align: center;
+  height: 100%;
 }
 
+.porcentaje {
+  font-weight: bold;
+}
+
+.h2-centrado-herramientas {
+  text-align: center;
+}
+
+/* Sección Sobre Sofía */
 .sobre-sofia {
   @include flex(row-reverse, space-between, center, wrap, 30px);
   margin-bottom: 90px;
   padding: 40px 5%;
 }
 
+.sobre-sofia-text {
+  max-width: 60%;
+  @include flex(column);
+  text-align: right;
+  @include font-style(60px);
+}
+
+.sobre-sofia img {
+  max-width: 35%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sofia-parrafo {
+  @include font-style(20px);
+}
+
+/* Banner final */
+.banner-final {
+  width: 100%;
+  @include flex(row, center);
+}
+
+/* Media Queries - Home */
 @media (max-width: 768px) {
-  .hero, .sobre-sofia {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0 5%;
-      margin-top: 140px;
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5%;
+    margin-top: 140px;
   }
 
-  .hero-text, .sobre-sofia-text {
-      max-width: 100%;
-      width: 100%;
+  .hero-text,
+  .sobre-sofia-text {
+    max-width: 100%;
+    width: 100%;
+    @include font-style(18px);
+  }
+
+  .boton-hero {
+    @include font-style(18px);
+  }
+
+  .sofia-parrafo {
+    @include font-style(18px);
   }
 
   .hero-title {
-      font-size: 50px;
+    @include font-style(50px);
   }
 
   .sofia-title {
-      font-size: 40px;
+    @include font-style(40px);
   }
 
-  .hero-image, .sobre-sofia img {
-      max-width: 100%;
-      width: 100%;
+  .sobre-sofia {
+    margin-top: -60px;
+  }
+
+  .h2-centrado-herramientas {
+    @include font-style(40px);
+    text-align: center;
+  }
+
+  .hero-image,
+  .sobre-sofia img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .banner-final img {
+    width: clamp(300px, 100%, 1200px);
+    height: auto;
+    object-fit: cover;
+  }
+
+  .footer-logo {
+    width: 394px;
+    height: 158px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .home .footer-logo {
+    width: 394px;
+    height: 158px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
   }
 }

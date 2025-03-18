@@ -1,18 +1,9 @@
-/* Botón Blog sección */
-@mixin button($color) {
-    display: inline-block;
-    text-decoration: none;
-    color: $color;
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  
-    &:active {
-      color: darken($color, 10%);
-    }
-  
-    &:visited {
-      color: darken($color, 20%);
-    }
-  }
+/* Flex */
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}

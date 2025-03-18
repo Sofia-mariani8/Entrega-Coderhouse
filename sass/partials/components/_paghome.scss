@@ -1,198 +1,76 @@
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  @include flex(row, space-between, center, wrap, 30px);
   margin-bottom: 90px;
-  flex-wrap: wrap;
-  padding-top: 70px; 
-  padding: 40px 5%; 
+  padding: 70px 5%;
   margin-top: 130px;
 }
 
-.hero-text {
+.hero-text, .sobre-sofia-text {
   max-width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px; 
+  @include flex(column, flex-start, flex-start, nowrap, 10px);
 }
 
 .hero h1 {
   text-align: left;
-  margin: 0; 
-  padding-bottom: 5px; 
+  margin: 0;
+  padding-bottom: 5px;
 }
 
-.p-hero {
+.p-hero, .sofia-parrafo {
   font-size: 20px;
-  margin: 0; 
+  margin: 0;
 }
 
-.boton-hero {
-  font-size: 20px;
-  padding: 10px 20px;
-  background-color: #B17AF6;
-  color: #ffffff;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  align-self: flex-start; 
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: $margin-top-default;
-}
-
-.boton-hero:hover {
-  background-color: #9A63D3; 
-  transform: scale(1.05); 
-}
-
-.hero-image {
+.hero-image, .sobre-sofia img {
   max-width: 35%;
   width: 100%;
-  min-width: 300px;
   object-fit: cover;
   flex-grow: 1;
 }
 
 .herramientas {
   width: 80%;
-  max-width: 1200px; 
-  height: auto; 
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between;
-  align-items: center; 
-  margin: 0 auto;
+  max-width: 1200px;
+  height: auto;
+  @include flex(row, space-between, center, wrap);
+  margin: 0 auto 90px;
   padding: 20px;
-  margin-bottom: 90px;
 }
 
 .herramienta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%; 
-}
-
-.porcentaje {
-  font-weight: bold;
-}
-
-.h2-centrado-herramientas {
+  @include flex(column, center, center);
   text-align: center;
 }
 
 .sobre-sofia {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
+  @include flex(row-reverse, space-between, center, wrap, 30px);
   margin-bottom: 90px;
-  flex-wrap: wrap;
-  flex-direction: row-reverse; 
-  padding: 40px 5%; 
+  padding: 40px 5%;
 }
 
-.sobre-sofia-text {
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: right; 
-  font-size: 60px;
-}
-
-.sobre-sofia img {
-  max-width: 35%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.sofia-parrafo {
-  font-size: 20px;
-}
-
-.banner-final {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-/* Media Queries - Home */
 @media (max-width: 768px) {
-  .hero {
+  .hero, .sobre-sofia {
       flex-direction: column;
       align-items: flex-start;
       padding: 0 5%;
       margin-top: 140px;
   }
 
-  .hero-text,
-  .sobre-sofia-text {
+  .hero-text, .sobre-sofia-text {
       max-width: 100%;
       width: 100%;
-      font-size: 18px;
-  }
-
-  .boton-hero {
-      font-size: 18px;
-  }
-
-  .sofia-parrafo {
-      font-size: 18px;
   }
 
   .hero-title {
-      font-size: 50px; 
+      font-size: 50px;
   }
 
   .sofia-title {
       font-size: 40px;
   }
-  
-  .sobre-sofia {
-      margin-top: -60px;
-  }
 
-  .h2-centrado-herramientas {
-      font-size: 40px;
-      text-align: center;
-  }
-
-  .hero-image,
-  .sobre-sofia img {
+  .hero-image, .sobre-sofia img {
       max-width: 100%;
       width: 100%;
   }
-
-  .banner-final {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-  }
-  
-  .banner-final img {
-      width: clamp(300px, 100%, 1200px); 
-      height: auto; 
-      object-fit: cover;
-  }    
-
-  .footer-logo {
-  width: 394px;
-  height: 158px;
-  object-fit: contain;
-  display: block; 
-  margin: 0 auto; 
-  }
-
-  .home .footer-logo {
-      width: 394px;
-      height: 158px;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-  }
 }
-

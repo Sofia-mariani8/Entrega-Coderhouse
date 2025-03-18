@@ -30,8 +30,22 @@
 }
 
 .boton-blog {
-    @include button(map-get($colors, primary));
+    display: inline-block;
+    text-decoration: none;
+    color: map-get($colors, primary);
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
     margin-top: 20px;
+}
+
+.boton-blog:active {
+    color: darken(map-get($colors, primary), 10%);
+}
+
+.boton-blog:visited {
+    color: darken(map-get($colors, primary), 20%);
 }
 
 @media screen and (max-width: 768px) {
@@ -86,5 +100,3 @@
         text-align: center;
     }
 }
-
-/* Margin top */

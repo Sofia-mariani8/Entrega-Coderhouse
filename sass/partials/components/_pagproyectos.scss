@@ -17,6 +17,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.proyecto:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% al hacer hover */
 }
 
 .img-proyectos {
@@ -46,4 +51,11 @@
         gap: 20px; 
     }
 }
+
+@media (max-width: 768px) {
+    .h2-centrado {
+       margin-bottom: 50px;
+    }
+}
+
 

@@ -1,21 +1,18 @@
-/* Títulos */
-@mixin heading($level, $weight: 700, $color: inherit, $margin-bottom: 20px) {
-    font-size: map-get($font-sizes, $level);
-    font-weight: $weight;
+/* Botón Blog sección */
+@mixin button($color) {
+    display: inline-block;
+    text-decoration: none;
     color: $color;
-    margin-bottom: $margin-bottom;
-  }
-
-  /* Párrafos */
-@mixin paragraph($color: map-get($colors, text-dark)) {
-    font-size: map-get($font-sizes, p);
-    color: $color;
-  }
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
   
-  /* Centrar elementos */
-  @mixin centered($margin: 30px, $margin-top: 150px, $margin-bottom: 60px) {
-    text-align: center;
-    margin: $margin;
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom;
+    &:active {
+      color: darken($color, 10%);
+    }
+  
+    &:visited {
+      color: darken($color, 20%);
+    }
   }

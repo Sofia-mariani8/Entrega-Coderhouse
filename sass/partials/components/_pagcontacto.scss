@@ -14,7 +14,7 @@
 }
 
 .img-contacto {
-    margin-top: 20px;
+    margin-top: $margin-top-default;
     max-width: 100%;
     height: auto;
 }
@@ -57,3 +57,46 @@
     margin-bottom: -40px;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .titulo-contacto {
+        font-size: 32px; 
+        text-align: center;
+    }
+
+    .parrafo-contacto {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .h2-centrado-contactame {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: -50px;
+    }
+
+    .contacto-div-2 form {
+        width: 100%;
+    }
+
+    .form-label {
+        font-size: 18px;
+    }
+
+    .form-control, .form-select {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .img-contacto {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        padding: 12px;
+    }
+}

@@ -22,10 +22,42 @@
     background-color: #FFFAFF;
     border-radius: 5px;
   }
+
+  /* Contenedor para el flip */
+.servicio {
+  perspective: 1000px; /* Permite el efecto 3D */
+}
+
+/* Frontal y trasera */
+.servicio-front,
+.servicio-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Efecto de volteo */
+.servicio:hover .servicio-inner {
+  transform: rotateY(180deg);
+}
+
+/* Ajustes de texto */
+.titulo-servicio {
+  font-weight: bold;
+  margin-top: $margin-top-default;
+}
   
   .titulo-servicio {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: $margin-top-default;
   }
   
   .descripcion-servicio {

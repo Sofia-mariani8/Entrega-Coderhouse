@@ -1,15 +1,16 @@
-/* Blog Sección */
 .img-centrada {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    max-width: 100%;
+    height: auto;
 }
 
 .noticia-p {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: map-get($font-sizes, p);
 }
 
 .blog-seccion {
@@ -25,23 +26,63 @@
 
 .titulo-blog {
     font-weight: bold;
+    font-size: map-get($font-sizes, h2);
 }
 
 .boton-blog {
-    display: inline-block;
-    text-decoration: none;
-    color: #B17AF6;
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease;
+    @include button(map-get($colors, primary));
     margin-top: 20px;
 }
 
-.boton-blog:active {
-    color: #8E5ACC;
+@media screen and (max-width: 768px) {
+    .img-centrada {
+        width: 324px;
+        height: 257px;
+        object-fit: cover;
+    }
 }
 
-.boton-blog:visited {
-    color: #572597; 
+@media (max-width: 768px) {
+    .blog-seccion {
+        margin: 40px 20px;
+        padding: 40px;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .titulo-blog {
+        font-size: map-get($font-sizes, h3);
+        text-align: center;
+    }
+
+    .h2-centrado {
+        margin-bottom: -20px;
+        font-size: 50px;
+    }
+
+    .noticia-p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .noticia-1, .noticia-2, .noticia-3 {
+        margin-bottom: 50px;
+    }
+
+    .img-centrada {
+        width: 324px;
+        height: 257px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .boton-blog {
+        font-size: 18px;
+        margin-top: 15px;
+        display: block;
+        text-align: center;
+    }
 }

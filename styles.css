@@ -240,8 +240,6 @@ footer {
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  max-width: 100%;
-  height: auto;
 }
 
 .noticia-p {
@@ -283,51 +281,6 @@ footer {
   color: #572597;
 }
 
-@media screen and (max-width: 768px) {
-  .img-centrada {
-    width: 324px;
-    height: 257px;
-    object-fit: cover;
-  }
-}
-@media (max-width: 768px) {
-  .blog-seccion {
-    margin: 40px 20px;
-    padding: 40px;
-    text-align: center;
-    margin-top: -20px;
-  }
-  .titulo-blog {
-    font-size: 32px;
-    text-align: center;
-  }
-  .h2-centrado {
-    margin-bottom: -20px;
-    font-size: 50px;
-  }
-  .noticia-p {
-    font-size: 18px;
-    text-align: center;
-  }
-  .noticia-1, .noticia-2, .noticia-3 {
-    margin-bottom: 50px;
-  }
-  .img-centrada {
-    width: 324px;
-    height: 257px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
-  .boton-blog {
-    font-size: 18px;
-    margin-top: 15px;
-    display: block;
-    text-align: center;
-  }
-}
 /* Contacto Sección */
 .contacto-seccion {
   margin-bottom: 50px;
@@ -387,42 +340,6 @@ footer {
   margin-bottom: -40px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  .titulo-contacto {
-    font-size: 32px;
-    text-align: center;
-  }
-  .parrafo-contacto {
-    font-size: 18px;
-    text-align: center;
-  }
-  .h2-centrado-contactame {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: -50px;
-  }
-  .contacto-div-2 form {
-    width: 100%;
-  }
-  .form-label {
-    font-size: 18px;
-  }
-  .form-control, .form-select {
-    font-size: 16px;
-    padding: 8px;
-  }
-  .img-contacto {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
-  .btn-primary {
-    font-size: 18px;
-    padding: 12px;
-  }
-}
 .hero {
   display: flex;
   align-items: center;
@@ -627,11 +544,6 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease-in-out; /* Transición suave */
-}
-
-.proyecto:hover {
-  transform: scale(1.1); /* Aumenta el tamaño en un 10% al hacer hover */
 }
 
 .img-proyectos {
@@ -660,11 +572,6 @@ footer {
     gap: 20px;
   }
 }
-@media (max-width: 768px) {
-  .h2-centrado {
-    margin-bottom: 50px;
-  }
-}
 .seccion-servicios {
   max-width: 1100px;
   margin: 0 auto;
@@ -688,38 +595,6 @@ footer {
   padding: 16px;
   background-color: #FFFAFF;
   border-radius: 5px;
-}
-
-/* Contenedor para el flip */
-.servicio {
-  perspective: 1000px; /* Permite el efecto 3D */
-}
-
-/* Frontal y trasera */
-.servicio-front,
-.servicio-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  text-align: center;
-}
-
-/* Efecto de volteo */
-.servicio:hover .servicio-inner {
-  transform: rotateY(180deg);
-}
-
-/* Ajustes de texto */
-.titulo-servicio {
-  font-weight: bold;
-  margin-top: 20px;
 }
 
 .titulo-servicio {
@@ -800,4 +675,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

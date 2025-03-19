@@ -1,17 +1,38 @@
 .boton-hero {
-    font-size: 90px;
+    font-size: map-get($font-sizes, h1);
     padding: 10px 20px;
     background-color: #ff5733; 
-    color: #ffffff; 
+    color: $text-light;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     align-self: flex-start;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 20px;
-}
-
-.boton-hero:hover {
+    @include font-style();
+  }
+  
+  .boton-hero:hover {
     background-color: #ff884d; 
     transform: scale(1.05);
-}
+  }
+  
+  .boton-blog {
+    display: inline-block;
+    text-decoration: none;
+    color: $primary;
+    font-size: map-get($font-sizes, h3);
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+    @include font-style();
+  }
+  
+  .boton-blog:active {
+    color: darken($primary, 10%);
+  }
+  
+  .boton-blog:visited {
+    color: darken($primary, 30%);
+  }

@@ -1,73 +1,53 @@
-/* Mixins */
-@mixin grid-layout($columns, $gap: 0) {
-    display: grid;
-    grid-template-columns: repeat($columns, 1fr);
-    gap: $gap;
-  }
-  
-  @mixin flex-column-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  @mixin font-style($size: 16px, $weight: normal, $color: #333) {
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
-  }
-  
-  /* Sección Proyectos */
+$card-bg-light: lighten($section-bg, 10%);
+
+.primera-seccion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto 90px;
+  padding: 0 15px;
+}
+
+.proyecto {
+  padding: 16px;
+  background-color: $card-bg-light; 
+  border-radius: 5px;
+  @include flex(column, center, center);
+  text-align: center;
+}
+
+.img-proyectos {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.titulo-proyecto {
+  margin: 0;
+  font-size: 18px;  
+  font-weight: bold;
+  color: $text-dark;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
   .primera-seccion {
-    @include grid-layout(3, 32px);
-    max-width: 1100px;
-    margin: 0 auto 90px;
-    padding: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .proyecto {
-    padding: 16px;
-    background-color: #FFFAFF;
-    border-radius: 5px;
-    @include flex-column-center;
-    transition: transform 0.3s ease-in-out;
-  
-    &:hover {
-      transform: scale(1.1);
-    }
+}
+
+@media (max-width: 768px) {
+  .primera-seccion {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-  
-  .img-proyectos {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .h2-centrado {
+  margin-bottom: 60px;
+  font-size: 50px;
   }
-  
-  .titulo-proyecto {
-    margin: 0;
-    @include font-style(22px, 600);
-  }
-  
-  .descripcion-proyecto {
-    @include font-style(16px, normal, #777);
-  }
-  
-  /* Media Queries */
-  @media (max-width: 1024px) {
-    .primera-seccion {
-      @include grid-layout(2, 32px);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .primera-seccion {
-      @include grid-layout(1, 20px);
-    }
-  
-    .h2-centrado {
-      margin-bottom: 50px;
-    }
-  }
-  
+}

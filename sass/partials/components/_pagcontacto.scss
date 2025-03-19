@@ -1,99 +1,91 @@
-/* Mixins */
-@mixin font-style($size: 16px, $weight: normal, $style: normal) {
-    font-size: $size;
-    font-weight: $weight;
-    font-style: $style;
-  }
-  
-  @mixin button-style($bg-color, $border-color, $text-color) {
-    background-color: $bg-color;
-    border-color: $border-color;
-    color: $text-color;
-  
-    &:hover {
-      background-color: darken($bg-color, 10%);
-      border-color: $primary;
-    }
-  }
-  
-  /* Estilos */
-  .contacto-seccion {
-    margin-bottom: 50px;
-  }
-  
-  .titulo-contacto {
-    margin-bottom: 30px;
-    @include font-style(40px, bold, italic);
-  }
-  
+.contacto-seccion { 
+  margin-bottom: 50px;
+}
+
+.titulo-contacto {
+  margin-bottom: 30px;
+  font-size: map-get($font-sizes, contacto-title);
+  font-weight: bold;
+}
+
+.parrafo-contacto {
+  font-size: map-get($font-sizes, contacto-subtitle);
+}
+
+.img-contacto {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.contacto-div-2 form {
+  max-width: 100%;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control, .form-select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: $primary; 
+  border-color: $primary; 
+  color: white; 
+  font-size: map-get($font-sizes, contacto-btn);
+}
+
+.btn-primary:hover {
+  background-color: darken($primary, 10%); 
+  border-color: darken($primary, 10%);
+}
+
+.h2-centrado-contactame {
+  margin-bottom: -170px;
+  font-size: map-get($font-sizes, h2);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: -40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .titulo-contacto, 
   .parrafo-contacto {
-    @include font-style(20px);
+    text-align: center;
   }
-  
-  .img-contacto {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
+
+  .h2-centrado-contactame {
+    font-size: map-get($font-sizes, h3);
+    margin-bottom: -50px;
+    font-size: 50px;
   }
-  
-  .contacto-div-2 form {
-    max-width: 100%;
-  }
-  
+
   .form-label {
+    font-size: 18px;
     font-weight: bold;
   }
-  
+
   .form-control, 
   .form-select {
-    padding: 10px;
-    @include font-style(16px);
+    font-size: 16px;
+    padding: 8px;
   }
-  
-  .mb-3 {
-    margin-bottom: 15px;
+
+  .img-contacto {
+    width: 100%;
   }
-  
+
   .btn-primary {
-    @include button-style(#B17AF6, #B17AF6, white);
+    font-size: map-get($font-sizes, contacto-btn);
+    padding: 12px;
   }
-  
-  .h2-centrado-contactame {
-    text-align: center;
-    @include font-style(60px, 700);
-    margin-top: 150px;
-    margin-bottom: -40px;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .titulo-contacto, 
-    .parrafo-contacto {
-      text-align: center;
-    }
-  
-    .h2-centrado-contactame {
-      @include font-style(50px);
-      margin-bottom: -50px;
-    }
-  
-    .form-label {
-      @include font-style(18px, bold);
-    }
-  
-    .form-control, 
-    .form-select {
-      @include font-style(16px);
-      padding: 8px;
-    }
-  
-    .img-contacto {
-      width: 100%;
-    }
-  
-    .btn-primary {
-      @include font-style(18px);
-      padding: 12px;
-    }
-  }
-  
+}

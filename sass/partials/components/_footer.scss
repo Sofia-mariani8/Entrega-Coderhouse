@@ -1,88 +1,77 @@
 footer {
-  width: 100%;
-  background-color: #2c3e50; 
-  color: #ffffff; 
-  padding: 20px;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-top: auto;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 600px;
-}
+   width: 100%;
+   background-color: $footer-bg;
+   color: $text-light;
+   padding: 20px;
+   @include flex(row, flex-start, flex-start, wrap);
+   box-sizing: border-box;
+   margin-top: auto;
+ }
+ 
+ .footer-left {
+   @include flex(column, flex-start, flex-start);
+   max-width: 600px;
+ }
  
  .pgrande-footer {
-   font-size: 18px;
+   font-size: map-get($font-sizes, p);
    margin-bottom: 10px;
-   color: #ffffff;
-}
+   color: $text-light;
+   @include font-style();
+ }
  
-.redes-sociales {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.redes-sociales {
-   display: flex;
-   gap: 10px;
-   align-items: center;
+ .redes-sociales {
+   @include flex(row, flex-start, center, nowrap, 10px);
    margin-bottom: 10px;
-}
-
-.p-footer {
-   font-size: 14px;
-   color: #ffffff;
-}
-
-.footer-logo {
+ }
+ 
+ .p-footer {
+   font-size: map-get($font-sizes, small);
+   color: $text-light;
+   @include font-style();
+ }
+ 
+ .footer-logo {
    width: 394px;
    height: 158px;
    object-fit: contain;
    margin-left: auto;
    align-self: center;
-}
-
-.img-herramienta {
-   font-size: 18px;
+ }
+ 
+ .img-herramienta {
+   font-size: map-get($font-sizes, p);
    margin-bottom: 20px;
-}
-
-.img-sinmargen {
+ }
+ 
+ .img-sinmargen {
    margin: 0;
    padding: 0;
-}
-
-.icono-redes {
+ }
+ 
+ .icono-redes {
    font-size: 24px;
-}
-
-.section {
+ }
+ 
+ .section {
    width: 100%;
    min-height: 100vh;
-   background-color: #ecf0f1; 
-}
-
-.container {
+   background-color: $section-bg;
+ }
+ 
+ .container {
    width: 80%;
    display: block;
    margin: auto;
    padding-top: 100px;
-}
-
-.content-section {
+ }
+ 
+ .content-section {
    float: left;
    width: 55%;
-}
-
-.image-section {
+ }
+ 
+ .image-section {
    float: right;
    width: 40%;
-}
+ }

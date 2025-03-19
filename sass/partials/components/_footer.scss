@@ -17,7 +17,7 @@ footer {
    font-size: map-get($font-sizes, p);
    margin-bottom: 10px;
    color: $text-light;
-   @include font-style();
+   @include font-style(normal);
  }
  
  .redes-sociales {
@@ -26,9 +26,9 @@ footer {
  }
  
  .p-footer {
-   font-size: map-get($font-sizes, small);
+   font-size: map-get($font-sizes, text-small);
    color: $text-light;
-   @include font-style();
+   @include font-style(normal);
  }
  
  .footer-logo {
@@ -50,8 +50,8 @@ footer {
  }
  
  .icono-redes {
-   font-size: 24px;
- }
+  font-size: map-get($font-sizes, p);
+}
  
  .section {
    width: 100%;

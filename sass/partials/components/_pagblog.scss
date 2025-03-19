@@ -26,18 +26,18 @@
   display: inline-block;
   text-decoration: none;
   color: $primary;
-  font-size: 22px;
+  font-size: map-get($font-sizes, p);
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s ease;
   margin-top: 20px;
 
   &:active {
-    color: $secondary;
+    color: $primary;
   }
 
   &:visited {
-    color: darken($primary, 20%);
+    color: $secondary;
   }
 }
 
@@ -62,7 +62,6 @@
     font-size: map-get($font-sizes, h3);
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
   }
 
   .h2-centrado {
@@ -72,7 +71,7 @@
 
   .noticia-p {
     text-align: center;
-    font-size: 18px;
+    font-size: map-get($font-sizes, text-small);
   }
 
   .noticia-1, .noticia-2, .noticia-3 {

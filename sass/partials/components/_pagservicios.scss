@@ -8,7 +8,7 @@
   margin-top: 140px;
   margin-bottom: 32px; 
   text-align: center;
-  font-size: 60px;
+  font-size: map-get($font-sizes, h2);
 }
 
 .servicios {
@@ -29,7 +29,7 @@
 }
 
 .descripcion-servicio {
-  font-size: 20px;
+  font-size: map-get($font-sizes, p);
 }
 
 .segunda-seccion {
@@ -55,7 +55,7 @@
 }
 
 .descripcion-servicios {
-  font-size: 20px;
+  font-size: map-get($font-sizes, p-small);
 }
 
 /* Media Queries */
@@ -73,7 +73,7 @@
   .segunda-seccion-texto {
     max-width: 100%;
     width: 100%;
-    font-size: 20px;
+    font-size: map-get($font-sizes, p-small);
   }
 
   .h2-centradoSERVICIOS {
@@ -81,7 +81,7 @@
   }
 
   .descripcion-servicios {
-    font-size: 18px;
+    font-size: map-get($font-sizes, text-small);
   }
 
   .titulo-servicios {

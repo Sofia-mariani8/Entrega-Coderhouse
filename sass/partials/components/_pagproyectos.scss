@@ -26,7 +26,7 @@ $card-bg-light: lighten($section-bg, 10%);
 
 .titulo-proyecto {
   margin: 0;
-  font-size: 18px;  
+  font-size: map-get($font-sizes, text-small);
   font-weight: bold;
   color: $text-dark;
 }

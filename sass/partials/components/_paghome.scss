@@ -18,12 +18,12 @@
 }
 
 .p-hero {
-  font-size: 20px;
+  font-size: map-get($font-sizes, p);
   margin: 0;
 }
 
 .boton-hero {
-  font-size: 20px;
+  font-size: map-get($font-sizes, p-small);
   padding: 10px 20px;
   background-color: $primary;
   color: $text-light;
@@ -82,7 +82,7 @@
   max-width: 60%;
   @include flex(column, flex-start, flex-end, nowrap, 10px);
   text-align: right;
-  font-size: 60px;
+  font-size: map-get($font-sizes, h2);
 }
 
 .sobre-sofia img {
@@ -92,7 +92,7 @@
 }
 
 .sofia-parrafo {
-  font-size: 20px;
+  font-size: map-get($font-sizes, p-small);
 }
 
 .banner-final {
@@ -118,15 +118,15 @@
   }
 
   .boton-hero {
-    font-size: 18px;
+    font-size: map-get($font-sizes, p);
   }
 
   .sofia-parrafo {
-    font-size: 18px;
+    font-size: map-get($font-sizes, p);
   }
 
   .hero-title {
-    font-size: 30px;
+    font-size: map-get($font-sizes, h3);
   }
 
   .sofia-title {

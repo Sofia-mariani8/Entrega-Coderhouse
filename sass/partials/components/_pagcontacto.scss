@@ -4,12 +4,12 @@
 
 .titulo-contacto {
   margin-bottom: 30px;
-  font-size: map-get($font-sizes, contacto-title);
+  font-size: map-get($font-sizes, h3);
   font-weight: bold;
 }
 
 .parrafo-contacto {
-  font-size: map-get($font-sizes, contacto-subtitle);
+  font-size: map-get($font-sizes, h4);
 }
 
 .img-contacto {
@@ -28,7 +28,7 @@
 
 .form-control, .form-select {
   padding: 10px;
-  font-size: 16px;
+  font-size: map-get($font-sizes, text-small);
 }
 
 .mb-3 {
@@ -38,13 +38,13 @@
 .btn-primary {
   background-color: $primary; 
   border-color: $primary; 
-  color: white; 
-  font-size: map-get($font-sizes, contacto-btn);
+  color: $text-light; 
+  font-size: map-get($font-sizes, text-small);
 }
 
 .btn-primary:hover {
-  background-color: darken($primary, 10%); 
-  border-color: darken($primary, 10%);
+  background-color: $primary; 
+  border-color: $secondary;
 }
 
 .h2-centrado-contactame {
@@ -56,7 +56,7 @@
   margin-bottom: -40px;
 }
 
-/* Responsive */
+/* Media Queries */
 @media (max-width: 768px) {
   .titulo-contacto, 
   .parrafo-contacto {
@@ -70,7 +70,7 @@
   }
 
   .form-label {
-    font-size: 18px;
+    font-size: map-get($font-sizes, text-small);
     font-weight: bold;
   }
 
@@ -85,7 +85,7 @@
   }
 
   .btn-primary {
-    font-size: map-get($font-sizes, contacto-btn);
+    font-size: map-get($font-sizes, p);
     padding: 12px;
   }
 }

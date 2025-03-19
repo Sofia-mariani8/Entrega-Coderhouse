@@ -3,18 +3,18 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  @include font-style();
+  @include font-style(normal);
 }
 
 .card-title {
   font-size: map-get($font-sizes, h3);
   font-weight: bold;
   color: $text-dark;
-  @include font-style();
+  @include font-style(normal);
 }
 
 .card-text {
   font-size: map-get($font-sizes, p);
   color: $text-dark;
-  @include font-style();
+  @include font-style(normal);
 }

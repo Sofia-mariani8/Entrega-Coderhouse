@@ -45,7 +45,7 @@
 
 .nav-item .nav-link {
     color: $text-dark;
-    font-size: 18px;
+    font-size: map-get($font-sizes, text-small);
     text-decoration: none;
 }
 

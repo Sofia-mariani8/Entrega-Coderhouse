@@ -1,7 +1,7 @@
 .boton-hero {
     font-size: map-get($font-sizes, h1);
     padding: 10px 20px;
-    background-color: #ff5733; 
+    background-color: $primary; 
     color: $text-light;
     border: none;
     border-radius: 20px;
@@ -9,11 +9,11 @@
     align-self: flex-start;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 20px;
-    @include font-style();
+    @include font-style(normal);
   }
   
   .boton-hero:hover {
-    background-color: #ff884d; 
+    background-color: $secondary; 
     transform: scale(1.05);
   }
   
@@ -22,17 +22,16 @@
     text-decoration: none;
     color: $primary;
     font-size: map-get($font-sizes, h3);
-    font-weight: bold;
+    @include font-style(normal);
     cursor: pointer;
     transition: color 0.3s ease;
     margin-top: 20px;
-    @include font-style();
   }
   
   .boton-blog:active {
-    color: darken($primary, 10%);
+    color: $primary;
   }
   
   .boton-blog:visited {
-    color: darken($primary, 30%);
+    color: $primary;
   }

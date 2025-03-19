@@ -40,7 +40,7 @@ h3 {
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 p {
@@ -51,7 +51,7 @@ p {
 .boton-hero {
   font-size: 90px;
   padding: 10px 20px;
-  background-color: #ff5733;
+  background-color: #B17AF6;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -63,7 +63,7 @@ p {
 }
 
 .boton-hero:hover {
-  background-color: #ff884d;
+  background-color: #9A63D3;
   transform: scale(1.05);
 }
 
@@ -72,19 +72,18 @@ p {
   text-decoration: none;
   color: #B17AF6;
   font-size: 30px;
-  font-weight: bold;
+  font-style: normal;
   cursor: pointer;
   transition: color 0.3s ease;
   margin-top: 20px;
-  font-style: normal;
 }
 
 .boton-blog:active {
-  color: rgb(148.985915493, 74.2323943662, 242.7676056338);
+  color: #B17AF6;
 }
 
 .boton-blog:visited {
-  color: rgb(96.9014084507, 13.6267605634, 201.3732394366);
+  color: #B17AF6;
 }
 
 .card {
@@ -218,6 +217,7 @@ footer {
 }
 
 .p-footer {
+  font-size: 18px;
   color: #ffffff;
   font-style: normal;
 }
@@ -241,7 +241,7 @@ footer {
 }
 
 .icono-redes {
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .section {
@@ -296,17 +296,17 @@ footer {
   display: inline-block;
   text-decoration: none;
   color: #B17AF6;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s ease;
   margin-top: 20px;
 }
 .boton-blog:active {
-  color: #9A63D3;
+  color: #B17AF6;
 }
 .boton-blog:visited {
-  color: rgb(120.9718309859, 26.4647887324, 239.5352112676);
+  color: #9A63D3;
 }
 
 /* Media Queries */
@@ -328,7 +328,6 @@ footer {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
   }
   .h2-centrado {
     font-size: 60px;
@@ -348,7 +347,12 @@ footer {
 
 .titulo-contacto {
   margin-bottom: 30px;
+  font-size: 30px;
   font-weight: bold;
+}
+
+.parrafo-contacto {
+  font-size: 26px;
 }
 
 .img-contacto {
@@ -367,7 +371,7 @@ footer {
 
 .form-control, .form-select {
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .mb-3 {
@@ -377,12 +381,13 @@ footer {
 .btn-primary {
   background-color: #B17AF6;
   border-color: #B17AF6;
-  color: white;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .btn-primary:hover {
-  background-color: rgb(148.985915493, 74.2323943662, 242.7676056338);
-  border-color: rgb(148.985915493, 74.2323943662, 242.7676056338);
+  background-color: #B17AF6;
+  border-color: #9A63D3;
 }
 
 .h2-centrado-contactame {
@@ -394,7 +399,7 @@ footer {
   margin-bottom: -40px;
 }
 
-/* Responsive */
+/* Media Queries */
 @media (max-width: 768px) {
   .titulo-contacto,
   .parrafo-contacto {
@@ -418,6 +423,7 @@ footer {
     width: 100%;
   }
   .btn-primary {
+    font-size: 25px;
     padding: 12px;
   }
 }
@@ -451,7 +457,7 @@ footer {
 }
 
 .p-hero {
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
 }
 
@@ -568,10 +574,10 @@ footer {
     font-size: 18px;
   }
   .boton-hero {
-    font-size: 18px;
+    font-size: 25px;
   }
   .sofia-parrafo {
-    font-size: 18px;
+    font-size: 25px;
   }
   .hero-title {
     font-size: 30px;
@@ -701,7 +707,7 @@ footer {
 }
 
 .descripcion-servicio {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .segunda-seccion {

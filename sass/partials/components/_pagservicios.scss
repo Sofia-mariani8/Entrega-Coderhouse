@@ -55,7 +55,7 @@
 }
 
 .descripcion-servicios {
-  font-size: map-get($font-sizes, p-small);
+  font-size: map-get($font-sizes, p);
 }
 
 /* Media Queries */
@@ -81,7 +81,7 @@
   }
 
   .descripcion-servicios {
-    font-size: map-get($font-sizes, text-small);
+    font-size: 25px;
   }
 
   .titulo-servicios {

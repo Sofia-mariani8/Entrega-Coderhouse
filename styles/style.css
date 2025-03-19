@@ -499,7 +499,7 @@ footer .footer-logo {
 }
 
 .sofia-parrafo {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .banner-final {
@@ -677,7 +677,7 @@ footer .footer-logo {
 }
 
 .descripcion-servicios {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* Media Queries */
@@ -699,7 +699,7 @@ footer .footer-logo {
     font-size: 50px;
   }
   .descripcion-servicios {
-    font-size: 18px;
+    font-size: 25px;
   }
   .titulo-servicios {
     font-size: 40px;

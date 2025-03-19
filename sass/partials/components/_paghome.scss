@@ -1,33 +1,49 @@
-/* Sección Home */
 .hero {
-  @include flex(row, space-between, center, wrap, 30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
   margin-bottom: 90px;
-  padding: 40px 5%;
+  flex-wrap: wrap;
+  padding-top: 70px; 
+  padding: 40px 5%; 
   margin-top: 130px;
 }
 
 .hero-text {
   max-width: 60%;
-  @include flex(column);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
 }
 
 .hero h1 {
   text-align: left;
-  margin: 0;
-  padding-bottom: 5px;
+  margin: 0; 
+  padding-bottom: 5px; 
 }
 
 .p-hero {
-  @include font-style(20px);
-  margin: 0;
+  font-size: 20px;
+  margin: 0; 
 }
 
 .boton-hero {
-  @include font-style(20px);
+  font-size: 20px;
   padding: 10px 20px;
-  align-self: flex-start;
+  background-color: #B17AF6;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: flex-start; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 20px;
-  @include button-style(#B17AF6);
+}
+
+.boton-hero:hover {
+  background-color: #9A63D3; 
+  transform: scale(1.05); 
 }
 
 .hero-image {
@@ -38,20 +54,26 @@
   flex-grow: 1;
 }
 
-/* Sección Herramientas */
 .herramientas {
   width: 80%;
-  max-width: 1200px;
-  height: auto;
-  @include flex(row, space-between, center, wrap);
-  margin: 0 auto 90px;
+  max-width: 1200px; 
+  height: auto; 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center; 
+  margin: 0 auto;
   padding: 20px;
+  margin-bottom: 90px;
 }
 
 .herramienta {
-  @include flex(column, center, center);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 100%;
+  height: 100%; 
 }
 
 .porcentaje {
@@ -62,18 +84,24 @@
   text-align: center;
 }
 
-/* Sección Sobre Sofía */
 .sobre-sofia {
-  @include flex(row-reverse, space-between, center, wrap, 30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
   margin-bottom: 90px;
-  padding: 40px 5%;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; 
+  padding: 40px 5%; 
 }
 
 .sobre-sofia-text {
   max-width: 60%;
-  @include flex(column);
-  text-align: right;
-  @include font-style(60px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: right; 
+  font-size: 60px;
 }
 
 .sobre-sofia img {
@@ -83,81 +111,88 @@
 }
 
 .sofia-parrafo {
-  @include font-style(20px);
+  font-size: 20px;
 }
 
-/* Banner final */
 .banner-final {
   width: 100%;
-  @include flex(row, center);
+  display: flex;
+  justify-content: center;
 }
 
 /* Media Queries - Home */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 5%;
-    margin-top: 140px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 5%;
+      margin-top: 140px;
   }
 
   .hero-text,
   .sobre-sofia-text {
-    max-width: 100%;
-    width: 100%;
-    @include font-style(18px);
+      max-width: 100%;
+      width: 100%;
+      font-size: 18px;
   }
 
   .boton-hero {
-    @include font-style(18px);
+      font-size: 18px;
   }
 
   .sofia-parrafo {
-    @include font-style(18px);
+      font-size: 18px;
   }
 
   .hero-title {
-    @include font-style(50px);
+      font-size: 50px; 
   }
 
   .sofia-title {
-    @include font-style(40px);
+      font-size: 40px;
   }
-
+  
   .sobre-sofia {
-    margin-top: -60px;
+      margin-top: -60px;
   }
 
   .h2-centrado-herramientas {
-    @include font-style(40px);
-    text-align: center;
+      font-size: 40px;
+      text-align: center;
   }
 
   .hero-image,
   .sobre-sofia img {
-    max-width: 100%;
-    width: 100%;
+      max-width: 100%;
+      width: 100%;
   }
 
-  .banner-final img {
-    width: clamp(300px, 100%, 1200px);
-    height: auto;
-    object-fit: cover;
+  .banner-final {
+      width: 100%;
+      display: flex;
+      justify-content: center;
   }
+  
+  .banner-final img {
+      width: clamp(300px, 100%, 1200px); 
+      height: auto; 
+      object-fit: cover;
+  }    
 
   .footer-logo {
-    width: 394px;
-    height: 158px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+  width: 394px;
+  height: 158px;
+  object-fit: contain;
+  display: block; 
+  margin: 0 auto; 
   }
 
   .home .footer-logo {
-    width: 394px;
-    height: 158px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+      width: 394px;
+      height: 158px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
   }
 }
+

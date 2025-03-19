@@ -7,28 +7,28 @@ $card-bg-light: lighten($section-bg, 10%);
   max-width: 1100px;
   margin: 0 auto 90px;
   padding: 0 15px;
-}
 
-.proyecto {
-  padding: 16px;
-  background-color: $card-bg-light; 
-  border-radius: 5px;
-  @include flex(column, center, center);
-  text-align: center;
-}
+  .proyecto {
+    padding: 16px;
+    background-color: $card-bg-light;
+    border-radius: 5px;
+    @include flex(column, center, center);
+    text-align: center;
 
-.img-proyectos {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 16px;
-}
+    .img-proyectos {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
 
-.titulo-proyecto {
-  margin: 0;
-  font-size: map-get($font-sizes, text-small);
-  font-weight: bold;
-  color: $text-dark;
+    .titulo-proyecto {
+      margin: 0;
+      font-size: map-get($font-sizes, text-small);
+      font-weight: bold;
+      color: $text-dark;
+    }
+  }
 }
 
 /* Media Queries */
@@ -43,11 +43,9 @@ $card-bg-light: lighten($section-bg, 10%);
     grid-template-columns: 1fr;
     gap: 20px;
   }
-}
 
-@media (max-width: 768px) {
   .h2-centrado {
-  margin-bottom: 60px;
-  font-size: 50px;
+    margin-bottom: 60px;
+    font-size: 50px;
   }
 }

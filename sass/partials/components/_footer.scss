@@ -1,77 +1,40 @@
 footer {
-   width: 100%;
-   background-color: $footer-bg;
-   color: $text-light;
-   padding: 20px;
-   @include flex(row, flex-start, flex-start, wrap);
-   box-sizing: border-box;
-   margin-top: auto;
- }
- 
- .footer-left {
-   @include flex(column, flex-start, flex-start);
-   max-width: 600px;
- }
- 
- .pgrande-footer {
-   font-size: map-get($font-sizes, p);
-   margin-bottom: 10px;
-   color: $text-light;
-   @include font-style(normal);
- }
- 
- .redes-sociales {
-   @include flex(row, flex-start, center, nowrap, 10px);
-   margin-bottom: 10px;
- }
- 
- .p-footer {
-   font-size: map-get($font-sizes, text-small);
-   color: $text-light;
-   @include font-style(normal);
- }
- 
- .footer-logo {
-   width: 394px;
-   height: 158px;
-   object-fit: contain;
-   margin-left: auto;
-   align-self: center;
- }
- 
- .img-herramienta {
-   font-size: map-get($font-sizes, p);
-   margin-bottom: 20px;
- }
- 
- .img-sinmargen {
-   margin: 0;
-   padding: 0;
- }
- 
- .icono-redes {
-  font-size: map-get($font-sizes, p);
+  width: 100%;
+  background-color: $footer-bg;
+  color: $text-light;
+  padding: 20px;
+  @include flex(row, flex-start, flex-start, wrap);
+  box-sizing: border-box;
+  margin-top: auto;
+
+  .footer-left {
+    @include flex(column, flex-start, flex-start);
+    max-width: 600px;
+  }
+
+  .pgrande-footer {
+    font-size: map-get($font-sizes, p);
+    margin-bottom: 10px;
+    color: $text-light;
+    @include font-style(normal);
+  }
+
+  .redes-sociales {
+    @include flex(row, flex-start, center, nowrap, 10px);
+    margin-bottom: 10px;
+  }
+
+  .p-footer {
+    font-size: map-get($font-sizes, text-small);
+    color: $text-light;
+    @include font-style(normal);
+  }
+
+  .footer-logo {
+    width: 394px;
+    height: 158px;
+    object-fit: contain;
+    margin-left: auto;
+    align-self: center;
+  }
 }
- 
- .section {
-   width: 100%;
-   min-height: 100vh;
-   background-color: $section-bg;
- }
- 
- .container {
-   width: 80%;
-   display: block;
-   margin: auto;
-   padding-top: 100px;
- }
- 
- .content-section {
-   float: left;
-   width: 55%;
- }
- 
- .image-section {
-   float: right;
-   width: 40%;
- }

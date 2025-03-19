@@ -10,47 +10,49 @@
     background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.navbar.scrolled {
-    background-color: $text-light;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    &.scrolled {
+        background-color: $text-light;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-.logo-header {
-   width: 150px;
-}
+    .logo-header {
+        width: 150px;
+    }
 
-.burger-icon {
-    width: 30px;
-    height: auto;
-    fill: $text-dark;
-    margin-left: 20px;
-}
+    .burger-icon {
+        width: 30px;
+        height: auto;
+        fill: $text-dark;
+        margin-left: 20px;
+    }
 
-.navbar-toggler {
-    border: none;
-    background: none;
-}
+    .navbar-toggler {
+        border: none;
+        background: none;
+    }
 
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-.nav-item .nav-link {
-    color: $text-dark;
-    font-size: map-get($font-sizes, text-small);
-    text-decoration: none;
-}
+        .nav-item {
+            .nav-link {
+                color: $text-dark;
+                font-size: map-get($font-sizes, text-small);
+                text-decoration: none;
 
-.nav-item .nav-link:hover {
-    color: $primary;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
 }
 
 body {
@@ -63,4 +65,4 @@ body {
 
 main {
     flex: 1;
-}  
+}

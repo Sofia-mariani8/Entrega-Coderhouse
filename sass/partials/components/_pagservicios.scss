@@ -4,11 +4,12 @@
   padding: 40px 5%;
 }
 
-.h2-centradoSERVICIOS {
+.h1-centradoSERVICIOS {
   margin-top: 140px;
   margin-bottom: 32px; 
   text-align: center;
-  font-size: map-get($font-sizes, h2);
+  font-size: map-get($font-sizes, h1);
+  margin-bottom: 10px;
 }
 
 .servicios {
@@ -19,14 +20,24 @@
 
 .servicio {
   padding: 16px;
-  background-color: $text-light;
+  background-color: $services-bg;
   border-radius: 5px;
 }
 
-.titulo-servicio {
+.titulo-servicio2 {
   font-weight: bold;
   margin-top: 20px;
 }
+
+.titulo-servicios {
+  font-size: map-get($font-sizes, h2);
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 
 .descripcion-servicio {
   font-size: map-get($font-sizes, p);
@@ -76,9 +87,9 @@
     font-size: map-get($font-sizes, p-small);
   }
 
-  .h2-centradoSERVICIOS {
+  .h1-centradoSERVICIOS {
     font-size: 50px;
-  }
+}
 
   .descripcion-servicios {
     font-size: 25px;
@@ -86,7 +97,12 @@
 
   .titulo-servicios {
     font-size: 40px;
-  }
+    text-align: center;
+    width: 100%; 
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 30px;
+}
 
   .imagen-servicios {
     max-width: 100%;

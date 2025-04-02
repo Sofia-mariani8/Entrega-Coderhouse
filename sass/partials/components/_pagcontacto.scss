@@ -48,13 +48,12 @@
   border-color: $secondary;
 }
 
-.h2-centrado-contactame {
-  margin-bottom: -170px;
-  font-size: map-get($font-sizes, h2);
-  font-weight: 700;
+.h1-centrado-contactame {
+  margin-top: 140px;
+  margin-bottom: 32px; 
   text-align: center;
-  margin-top: 150px;
-  margin-bottom: -40px;
+  font-size: map-get($font-sizes, h1);
+  margin-bottom: -10px;
 }
 
 /* Media Queries */
@@ -88,5 +87,10 @@
   .btn-primary {
     font-size: map-get($font-sizes, p);
     padding: 12px;
+  }
+
+  .h1-centrado-contactame {
+    font-size: 50px;
+    margin-bottom: -100px;
   }
 }

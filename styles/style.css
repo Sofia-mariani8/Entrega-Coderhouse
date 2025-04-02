@@ -15,20 +15,20 @@
 /* Colores */
 /* COMPONENTES */
 h1 {
-  font-size: 90px;
-  color: #B17AF6;
+  font-size: 70px;
   font-weight: 900;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .h2-centrado {
   margin: 30px;
+  font-size: 50px;
   text-align: center;
   margin-bottom: 60px;
   margin-top: 150px;
@@ -49,7 +49,7 @@ p {
 }
 
 .boton-hero {
-  font-size: 90px;
+  font-size: 70px;
   padding: 10px 20px;
   background-color: #B17AF6;
   color: #ffffff;
@@ -219,10 +219,18 @@ footer .footer-logo {
 }
 
 /* PÁGINAS */
+.h1-centrado {
+  font-size: 70px;
+  margin-top: 140px;
+  margin-bottom: 32px;
+  text-align: center;
+  margin-bottom: -100px;
+}
+
 .blog-seccion {
   margin: 90px;
   padding: 80px;
-  margin-top: -80px;
+  margin-top: -90px;
 }
 .blog-seccion .titulo-blog {
   font-weight: bold;
@@ -259,6 +267,10 @@ footer .footer-logo {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .h1-centrado {
+    font-size: 50px;
+    margin-bottom: -150px;
+  }
   .blog-seccion {
     margin: 40px 20px;
     padding: 40px;
@@ -269,10 +281,6 @@ footer .footer-logo {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-  }
-  .blog-seccion .h2-centrado {
-    font-size: 60px;
-    margin-bottom: -20px;
   }
   .blog-seccion .noticia-p {
     text-align: center;
@@ -339,13 +347,12 @@ footer .footer-logo {
   border-color: #9A63D3;
 }
 
-.h2-centrado-contactame {
-  margin-bottom: -170px;
-  font-size: 60px;
-  font-weight: 700;
+.h1-centrado-contactame {
+  margin-top: 140px;
+  margin-bottom: 32px;
   text-align: center;
-  margin-top: 150px;
-  margin-bottom: -40px;
+  font-size: 70px;
+  margin-bottom: -10px;
 }
 
 /* Media Queries */
@@ -375,6 +382,10 @@ footer .footer-logo {
     font-size: 25px;
     padding: 12px;
   }
+  .h1-centrado-contactame {
+    font-size: 50px;
+    margin-bottom: -100px;
+  }
 }
 .hero {
   display: flex;
@@ -386,6 +397,11 @@ footer .footer-logo {
   margin-bottom: 90px;
   padding: 40px 5%;
   margin-top: 130px;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .hero-text {
@@ -402,7 +418,8 @@ footer .footer-logo {
   text-align: left;
   margin: 0;
   padding-bottom: 5px;
-  font-size: 90px;
+  color: #B17AF6;
+  font-size: 70px;
 }
 
 .p-hero {
@@ -466,7 +483,7 @@ footer .footer-logo {
 
 .h2-centrado-herramientas {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .sobre-sofia {
@@ -489,7 +506,7 @@ footer .footer-logo {
   flex-wrap: nowrap;
   gap: 10px;
   text-align: right;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .sobre-sofia img {
@@ -563,6 +580,10 @@ footer .footer-logo {
     display: block;
     margin: 0 auto;
   }
+  .hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
   .home .footer-logo {
     width: 394px;
     height: 158px;
@@ -571,6 +592,13 @@ footer .footer-logo {
     margin: 0 auto;
   }
 }
+.h1-centrado {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
 .primera-seccion {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -581,7 +609,7 @@ footer .footer-logo {
 }
 .primera-seccion .proyecto {
   padding: 16px;
-  background-color: rgb(246.5, 246.5, 246.5);
+  background-color: #ddd;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -615,7 +643,7 @@ footer .footer-logo {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .h2-centrado {
+  .h1-centrado {
     margin-bottom: 60px;
     font-size: 50px;
   }
@@ -626,11 +654,12 @@ footer .footer-logo {
   padding: 40px 5%;
 }
 
-.h2-centradoSERVICIOS {
+.h1-centradoSERVICIOS {
   margin-top: 140px;
   margin-bottom: 32px;
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
+  margin-bottom: 10px;
 }
 
 .servicios {
@@ -641,13 +670,22 @@ footer .footer-logo {
 
 .servicio {
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #fff9fd;
   border-radius: 5px;
 }
 
-.titulo-servicio {
+.titulo-servicio2 {
   font-weight: bold;
   margin-top: 20px;
+}
+
+.titulo-servicios {
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .descripcion-servicio {
@@ -695,7 +733,7 @@ footer .footer-logo {
     width: 100%;
     font-size: 20px;
   }
-  .h2-centradoSERVICIOS {
+  .h1-centradoSERVICIOS {
     font-size: 50px;
   }
   .descripcion-servicios {
@@ -703,6 +741,11 @@ footer .footer-logo {
   }
   .titulo-servicios {
     font-size: 40px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
   .imagen-servicios {
     max-width: 100%;
